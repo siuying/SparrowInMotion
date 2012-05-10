@@ -1,0 +1,2184 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<struct name='SPTextureProperties' type='{_SPTextureProperties=&quot;format&quot;i&quot;width&quot;i&quot;height&quot;i&quot;numMipmaps&quot;i&quot;generateMipmaps&quot;B&quot;premultipliedAlpha&quot;B}'>
+<field name='format' declared_type='SPTextureFormat' type='i'/>
+<field name='width' declared_type='int' type='i'/>
+<field name='height' declared_type='int' type='i'/>
+<field name='numMipmaps' declared_type='int' type='i'/>
+<field name='generateMipmaps' declared_type='BOOL' type='B'/>
+<field name='premultipliedAlpha' declared_type='BOOL' type='B'/>
+</struct>
+<string_constant name='SPARROW_VERSION' nsstring='true' value='1.3'/>
+<string_constant name='SP_DEFAULT_FONT_NAME' nsstring='true' value='Helvetica'/>
+<string_constant name='SP_EVENT_TYPE_ADDED' nsstring='true' value='added'/>
+<string_constant name='SP_EVENT_TYPE_ADDED_TO_STAGE' nsstring='true' value='addedToStage'/>
+<string_constant name='SP_EVENT_TYPE_COMPILE' nsstring='true' value='compile'/>
+<string_constant name='SP_EVENT_TYPE_ENTER_FRAME' nsstring='true' value='enterFrame'/>
+<string_constant name='SP_EVENT_TYPE_MOVIE_COMPLETED' nsstring='true' value='movieCompleted'/>
+<string_constant name='SP_EVENT_TYPE_REMOVED' nsstring='true' value='removed'/>
+<string_constant name='SP_EVENT_TYPE_REMOVED_FROM_STAGE' nsstring='true' value='removedFromStage'/>
+<string_constant name='SP_EVENT_TYPE_SOUND_COMPLETED' nsstring='true' value='soundCompleted'/>
+<string_constant name='SP_EVENT_TYPE_TOUCH' nsstring='true' value='touch'/>
+<string_constant name='SP_EVENT_TYPE_TRIGGERED' nsstring='true' value='triggered'/>
+<string_constant name='SP_EVENT_TYPE_TWEEN_COMPLETED' nsstring='true' value='tweenCompleted'/>
+<string_constant name='SP_EVENT_TYPE_TWEEN_STARTED' nsstring='true' value='tweenStarted'/>
+<string_constant name='SP_EVENT_TYPE_TWEEN_UPDATED' nsstring='true' value='tweenUpdated'/>
+<string_constant name='SP_EXC_ABSTRACT_CLASS' nsstring='true' value='AbstractClass'/>
+<string_constant name='SP_EXC_ABSTRACT_METHOD' nsstring='true' value='AbstractMethod'/>
+<string_constant name='SP_EXC_FILE_INVALID' nsstring='true' value='FileInvalid'/>
+<string_constant name='SP_EXC_FILE_NOT_FOUND' nsstring='true' value='FileNotFound'/>
+<string_constant name='SP_EXC_INDEX_OUT_OF_BOUNDS' nsstring='true' value='IndexOutOfBounds'/>
+<string_constant name='SP_EXC_INVALID_OPERATION' nsstring='true' value='InvalidOperation'/>
+<string_constant name='SP_EXC_NOT_RELATED' nsstring='true' value='NotRelated'/>
+<string_constant name='SP_NOTIFICATION_AUDIO_INTERRUPTION_BEGAN' nsstring='true' value='audioInterruptionBegan'/>
+<string_constant name='SP_NOTIFICATION_AUDIO_INTERRUPTION_ENDED' nsstring='true' value='audioInterruptionEnded'/>
+<string_constant name='SP_NOTIFICATION_MASTER_VOLUME_CHANGED' nsstring='true' value='masterVolumeChanged'/>
+<string_constant name='SP_TRANSITION_EASE_IN' nsstring='true' value='easeIn'/>
+<string_constant name='SP_TRANSITION_EASE_IN_BACK' nsstring='true' value='easeInBack'/>
+<string_constant name='SP_TRANSITION_EASE_IN_BOUNCE' nsstring='true' value='easeInBounce'/>
+<string_constant name='SP_TRANSITION_EASE_IN_ELASTIC' nsstring='true' value='easeInElastic'/>
+<string_constant name='SP_TRANSITION_EASE_IN_OUT' nsstring='true' value='easeInOut'/>
+<string_constant name='SP_TRANSITION_EASE_IN_OUT_BACK' nsstring='true' value='easeInOutBack'/>
+<string_constant name='SP_TRANSITION_EASE_IN_OUT_BOUNCE' nsstring='true' value='easeInOutBounce'/>
+<string_constant name='SP_TRANSITION_EASE_IN_OUT_ELASTIC' nsstring='true' value='easeInOutElastic'/>
+<string_constant name='SP_TRANSITION_EASE_OUT' nsstring='true' value='easeOut'/>
+<string_constant name='SP_TRANSITION_EASE_OUT_BACK' nsstring='true' value='easeOutBack'/>
+<string_constant name='SP_TRANSITION_EASE_OUT_BOUNCE' nsstring='true' value='easeOutBounce'/>
+<string_constant name='SP_TRANSITION_EASE_OUT_ELASTIC' nsstring='true' value='easeOutElastic'/>
+<string_constant name='SP_TRANSITION_EASE_OUT_IN' nsstring='true' value='easeOutIn'/>
+<string_constant name='SP_TRANSITION_EASE_OUT_IN_BACK' nsstring='true' value='easeOutInBack'/>
+<string_constant name='SP_TRANSITION_EASE_OUT_IN_BOUNCE' nsstring='true' value='easeOutInBounce'/>
+<string_constant name='SP_TRANSITION_EASE_OUT_IN_ELASTIC' nsstring='true' value='easeOutInElastic'/>
+<string_constant name='SP_TRANSITION_LINEAR' nsstring='true' value='linear'/>
+<string_constant name='SP_TRANSITION_RANDOMIZE' nsstring='true' value='randomize'/>
+<enum name='PI' value='3.14159265359f'/>
+<enum name='PI_HALF' value='1.57079632679f'/>
+<enum name='SPAudioSessionCategory_AmbientSound' value='1634558569'/>
+<enum name='SPAudioSessionCategory_AudioProcessing' value='1886547811'/>
+<enum name='SPAudioSessionCategory_MediaPlayback' value='1835361385'/>
+<enum name='SPAudioSessionCategory_PlayAndRecord' value='1886151026'/>
+<enum name='SPAudioSessionCategory_RecordAudio' value='1919247201'/>
+<enum name='SPAudioSessionCategory_SoloAmbientSound' value='1936682095'/>
+<enum name='SPColorSpaceAlpha' value='1'/>
+<enum name='SPColorSpaceRGBA' value='0'/>
+<enum name='SPHAlignCenter' value='1'/>
+<enum name='SPHAlignLeft' value='0'/>
+<enum name='SPHAlignRight' value='2'/>
+<enum name='SPLoopTypeNone' value='0'/>
+<enum name='SPLoopTypeRepeat' value='1'/>
+<enum name='SPLoopTypeReverse' value='2'/>
+<enum name='SPTextureFilterBilinear' value='1'/>
+<enum name='SPTextureFilterNearestNeighbor' value='0'/>
+<enum name='SPTextureFilterTrilinear' value='2'/>
+<enum name='SPTextureFormat4444' value='9'/>
+<enum name='SPTextureFormat5551' value='8'/>
+<enum name='SPTextureFormat565' value='6'/>
+<enum name='SPTextureFormat888' value='7'/>
+<enum name='SPTextureFormatAI88' value='10'/>
+<enum name='SPTextureFormatAlpha' value='1'/>
+<enum name='SPTextureFormatI8' value='11'/>
+<enum name='SPTextureFormatPvrtcRGB2' value='2'/>
+<enum name='SPTextureFormatPvrtcRGB4' value='4'/>
+<enum name='SPTextureFormatPvrtcRGBA2' value='3'/>
+<enum name='SPTextureFormatPvrtcRGBA4' value='5'/>
+<enum name='SPTextureFormatRGBA' value='0'/>
+<enum name='SPTouchPhaseBegan' value='0'/>
+<enum name='SPTouchPhaseCancelled' value='4'/>
+<enum name='SPTouchPhaseEnded' value='3'/>
+<enum name='SPTouchPhaseMoved' value='1'/>
+<enum name='SPTouchPhaseStationary' value='2'/>
+<enum name='SPVAlignBottom' value='2'/>
+<enum name='SPVAlignCenter' value='1'/>
+<enum name='SPVAlignTop' value='0'/>
+<enum name='SP_AQUA' value='65535'/>
+<enum name='SP_BLACK' value='0'/>
+<enum name='SP_BLUE' value='255'/>
+<enum name='SP_DEFAULT_FONT_COLOR' value='0'/>
+<enum name='SP_DEFAULT_FONT_SIZE' value='14.0f'/>
+<enum name='SP_FLOAT_EPSILON' value='0.0001f'/>
+<enum name='SP_FUCHSIA' value='16711935'/>
+<enum name='SP_GRAY' value='8421504'/>
+<enum name='SP_GREEN' value='32768'/>
+<enum name='SP_LIME' value='65280'/>
+<enum name='SP_MAROON' value='8388608'/>
+<enum name='SP_MAX_DISPLAY_TREE_DEPTH' value='16'/>
+<enum name='SP_NATIVE_FONT_SIZE' value='-1.0f'/>
+<enum name='SP_NAVY' value='128'/>
+<enum name='SP_NOT_FOUND' value='-1'/>
+<enum name='SP_OLIVE' value='8421376'/>
+<enum name='SP_PURPLE' value='8388736'/>
+<enum name='SP_RED' value='16711680'/>
+<enum name='SP_SILVER' value='12632256'/>
+<enum name='SP_TEAL' value='32896'/>
+<enum name='SP_WHITE' value='16777215'/>
+<enum name='SP_YELLOW' value='16776960'/>
+<enum name='TWO_PI' value='6.28318530718f'/>
+<class name='NSBundle'>
+<method selector='appBundle' class_method='true'>
+<retval declared_type='NSBundle*' type='@'/>
+</method>
+<method selector='pathForResource:'>
+<arg name='name' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='pathForResource:withScaleFactor:'>
+<arg name='name' declared_type='NSString*' type='@' index='0'/>
+<arg name='factor' declared_type='float' type='f' index='1'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='NSInvocation'>
+<method selector='invocationWithTarget:selector:' class_method='true'>
+<arg name='target' declared_type='id' type='@' index='0'/>
+<arg name='selector' declared_type='SEL' type=':' index='1'/>
+<retval declared_type='NSInvocation*' type='@'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='advanceTime:'>
+<arg name='seconds' declared_type='double' type='d' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='isComplete'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</class>
+<class name='NSString'>
+<method selector='contentScaleFactor'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='fullPathExtension'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='stringByAppendingSuffixToFilename:'>
+<arg name='suffix' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='stringByDeletingFullPathExtension'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='SPALSound'>
+<method selector='bufferID'>
+<retval declared_type='uint' type='I'/>
+</method>
+<method selector='initWithData:size:channels:frequency:duration:'>
+<arg name='data' declared_type='void*' const='true' type='^v' index='0'/>
+<arg name='size' declared_type='int' type='i' index='1'/>
+<arg name='channels' declared_type='int' type='i' index='2'/>
+<arg name='frequency' declared_type='int' type='i' index='3'/>
+<arg name='duration' declared_type='double' type='d' index='4'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='SPALSoundChannel'>
+<method selector='initWithSound:'>
+<arg name='sound' declared_type='SPALSound*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='SPAVSound'>
+<method selector='createPlayer'>
+<retval declared_type='AVAudioPlayer*' type='@'/>
+</method>
+<method selector='initWithContentsOfFile:duration:'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<arg name='duration' declared_type='double' type='d' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='SPAVSoundChannel'>
+<method selector='initWithSound:'>
+<arg name='sound' declared_type='SPAVSound*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='SPAudioEngine'>
+<method selector='masterVolume' class_method='true'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='setMasterVolume:' class_method='true'>
+<arg name='volume' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='start' class_method='true'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='start:' class_method='true'>
+<arg name='category' declared_type='SPAudioSessionCategory' type='i' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stop' class_method='true'>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='SPBitmapChar'>
+<method selector='addKerning:toChar:'>
+<arg name='amount' declared_type='float' type='f' index='0'/>
+<arg name='charID' declared_type='int' type='i' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='charID'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='createImage'>
+<retval declared_type='SPImage*' type='@'/>
+</method>
+<method selector='initWithID:texture:xOffset:yOffset:xAdvance:'>
+<arg name='charID' declared_type='int' type='i' index='0'/>
+<arg name='texture' declared_type='SPTexture*' type='@' index='1'/>
+<arg name='xOffset' declared_type='float' type='f' index='2'/>
+<arg name='yOffset' declared_type='float' type='f' index='3'/>
+<arg name='xAdvance' declared_type='float' type='f' index='4'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='kerningToChar:'>
+<arg name='charID' declared_type='int' type='i' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='setTexture:'>
+<arg name='texture' declared_type='SPTexture*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='texture'>
+<retval declared_type='SPTexture*' type='@'/>
+</method>
+<method selector='xAdvance'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='xOffset'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='yOffset'>
+<retval declared_type='float' type='f'/>
+</method>
+</class>
+<class name='SPBitmapFont'>
+<method selector='charByID:'>
+<arg name='charID' declared_type='int' type='i' index='0'/>
+<retval declared_type='SPBitmapChar*' type='@'/>
+</method>
+<method selector='createDisplayObjectWithWidth:height:text:fontSize:color:hAlign:vAlign:border:kerning:'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<arg name='text' declared_type='NSString*' type='@' index='2'/>
+<arg name='size' declared_type='float' type='f' index='3'/>
+<arg name='color' declared_type='uint' type='I' index='4'/>
+<arg name='hAlign' declared_type='SPHAlign' type='i' index='5'/>
+<arg name='vAlign' declared_type='SPVAlign' type='i' index='6'/>
+<arg name='border' declared_type='BOOL' type='B' index='7'/>
+<arg name='kerning' declared_type='BOOL' type='B' index='8'/>
+<retval declared_type='SPDisplayObject*' type='@'/>
+</method>
+<method selector='initWithContentsOfFile:'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithContentsOfFile:texture:'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<arg name='texture' declared_type='SPTexture*' type='@' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='lineHeight'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='name'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setLineHeight:'>
+<arg name='lineHeight' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='size'>
+<retval declared_type='float' type='f'/>
+</method>
+</class>
+<class name='SPButton'>
+<method selector='alphaWhenDisabled'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='buttonWithUpState:' class_method='true'>
+<arg name='upState' declared_type='SPTexture*' type='@' index='0'/>
+<retval declared_type='SPButton*' type='@'/>
+</method>
+<method selector='buttonWithUpState:downState:' class_method='true'>
+<arg name='upState' declared_type='SPTexture*' type='@' index='0'/>
+<arg name='downState' declared_type='SPTexture*' type='@' index='1'/>
+<retval declared_type='SPButton*' type='@'/>
+</method>
+<method selector='buttonWithUpState:text:' class_method='true'>
+<arg name='upState' declared_type='SPTexture*' type='@' index='0'/>
+<arg name='text' declared_type='NSString*' type='@' index='1'/>
+<retval declared_type='SPButton*' type='@'/>
+</method>
+<method selector='downState'>
+<retval declared_type='SPTexture*' type='@'/>
+</method>
+<method selector='enabled'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='fontColor'>
+<retval declared_type='uint' type='I'/>
+</method>
+<method selector='fontName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='fontSize'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='initWithUpState:'>
+<arg name='upState' declared_type='SPTexture*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithUpState:downState:'>
+<arg name='upState' declared_type='SPTexture*' type='@' index='0'/>
+<arg name='downState' declared_type='SPTexture*' type='@' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithUpState:text:'>
+<arg name='upState' declared_type='SPTexture*' type='@' index='0'/>
+<arg name='text' declared_type='NSString*' type='@' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='scaleWhenDown'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='setAlphaWhenDisabled:'>
+<arg name='alphaWhenDisabled' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDownState:'>
+<arg name='downState' declared_type='SPTexture*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setEnabled:'>
+<arg name='enabled' declared_type='BOOL' type='B' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFontColor:'>
+<arg name='fontColor' declared_type='uint' type='I' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFontName:'>
+<arg name='fontName' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFontSize:'>
+<arg name='fontSize' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setScaleWhenDown:'>
+<arg name='scaleWhenDown' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setText:'>
+<arg name='text' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTextBounds:'>
+<arg name='textBounds' declared_type='SPRectangle*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUpState:'>
+<arg name='upState' declared_type='SPTexture*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='text'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='textBounds'>
+<retval declared_type='SPRectangle*' type='@'/>
+</method>
+<method selector='upState'>
+<retval declared_type='SPTexture*' type='@'/>
+</method>
+</class>
+<class name='SPCompiledSprite'>
+<method selector='compile'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='sprite' class_method='true'>
+<retval declared_type='SPCompiledSprite*' type='@'/>
+</method>
+</class>
+<class name='SPDelayedInvocation'>
+<method selector='currentTime'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='initWithTarget:delay:'>
+<arg name='target' declared_type='id' type='@' index='0'/>
+<arg name='time' declared_type='double' type='d' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='invocationWithTarget:delay:' class_method='true'>
+<arg name='target' declared_type='id' type='@' index='0'/>
+<arg name='time' declared_type='double' type='d' index='1'/>
+<retval declared_type='SPDelayedInvocation*' type='@'/>
+</method>
+<method selector='setCurrentTime:'>
+<arg name='currentTime' declared_type='double' type='d' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='target'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='totalTime'>
+<retval declared_type='double' type='d'/>
+</method>
+</class>
+<class name='SPDisplayObject'>
+<method selector='alpha'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='bounds'>
+<retval declared_type='SPRectangle*' type='@'/>
+</method>
+<method selector='boundsInSpace:'>
+<arg name='targetCoordinateSpace' declared_type='SPDisplayObject*' type='@' index='0'/>
+<retval declared_type='SPRectangle*' type='@'/>
+</method>
+<method selector='broadcastEvent:'>
+<arg name='event' declared_type='SPEvent*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='globalToLocal:'>
+<arg name='globalPoint' declared_type='SPPoint*' type='@' index='0'/>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='height'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='hitTestPoint:forTouch:'>
+<arg name='localPoint' declared_type='SPPoint*' type='@' index='0'/>
+<arg name='isTouch' declared_type='BOOL' type='B' index='1'/>
+<retval declared_type='SPDisplayObject*' type='@'/>
+</method>
+<method selector='localToGlobal:'>
+<arg name='localPoint' declared_type='SPPoint*' type='@' index='0'/>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='name'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='parent'>
+<retval declared_type='SPDisplayObjectContainer*' type='@'/>
+</method>
+<method selector='pivotX'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='pivotY'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='removeFromParent'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='render:'>
+<arg name='support' declared_type='SPRenderSupport*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='root'>
+<retval declared_type='SPDisplayObject*' type='@'/>
+</method>
+<method selector='rotation'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='scaleX'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='scaleY'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='setAlpha:'>
+<arg name='alpha' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setHeight:'>
+<arg name='height' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setName:'>
+<arg name='name' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setParent:'>
+<arg name='parent' declared_type='SPDisplayObjectContainer*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPivotX:'>
+<arg name='pivotX' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPivotY:'>
+<arg name='pivotY' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRotation:'>
+<arg name='rotation' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setScaleX:'>
+<arg name='scaleX' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setScaleY:'>
+<arg name='scaleY' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTouchable:'>
+<arg name='touchable' declared_type='BOOL' type='B' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setVisible:'>
+<arg name='visible' declared_type='BOOL' type='B' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWidth:'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setX:'>
+<arg name='x' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setY:'>
+<arg name='y' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stage'>
+<retval declared_type='SPStage*' type='@'/>
+</method>
+<method selector='touchable'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='transformationMatrix'>
+<retval declared_type='SPMatrix*' type='@'/>
+</method>
+<method selector='transformationMatrixToSpace:'>
+<arg name='targetCoordinateSpace' declared_type='SPDisplayObject*' type='@' index='0'/>
+<retval declared_type='SPMatrix*' type='@'/>
+</method>
+<method selector='visible'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='width'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='x'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='y'>
+<retval declared_type='float' type='f'/>
+</method>
+</class>
+<class name='SPDisplayObjectContainer'>
+<method selector='addChild:'>
+<arg name='child' declared_type='SPDisplayObject*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addChild:atIndex:'>
+<arg name='child' declared_type='SPDisplayObject*' type='@' index='0'/>
+<arg name='index' declared_type='int' type='i' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='broadcastEvent:'>
+<arg name='event' declared_type='SPEvent*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='childAtIndex:'>
+<arg name='index' declared_type='int' type='i' index='0'/>
+<retval declared_type='SPDisplayObject*' type='@'/>
+</method>
+<method selector='childByName:'>
+<arg name='name' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='SPDisplayObject*' type='@'/>
+</method>
+<method selector='childIndex:'>
+<arg name='child' declared_type='SPDisplayObject*' type='@' index='0'/>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='containsChild:'>
+<arg name='child' declared_type='SPDisplayObject*' type='@' index='0'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='numChildren'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='removeAllChildren'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeChild:'>
+<arg name='child' declared_type='SPDisplayObject*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeChildAtIndex:'>
+<arg name='index' declared_type='int' type='i' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setIndex:ofChild:'>
+<arg name='index' declared_type='int' type='i' index='0'/>
+<arg name='child' declared_type='SPDisplayObject*' type='@' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='sortChildren:'>
+<arg name='comparator' function_pointer='true' declared_type='NSComparator' type='@?' index='0'>
+<arg declared_type='id' type='@'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='NSComparisonResult' type='i'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='swapChild:withChild:'>
+<arg name='child1' declared_type='SPDisplayObject*' type='@' index='0'/>
+<arg name='child2' declared_type='SPDisplayObject*' type='@' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='swapChildAtIndex:withChildAtIndex:'>
+<arg name='index1' declared_type='int' type='i' index='0'/>
+<arg name='index2' declared_type='int' type='i' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='SPEnterFrameEvent'>
+<method selector='eventWithType:passedTime:' class_method='true'>
+<arg name='type' declared_type='NSString*' type='@' index='0'/>
+<arg name='seconds' declared_type='double' type='d' index='1'/>
+<retval declared_type='SPEnterFrameEvent*' type='@'/>
+</method>
+<method selector='initWithType:bubbles:passedTime:'>
+<arg name='type' declared_type='NSString*' type='@' index='0'/>
+<arg name='bubbles' declared_type='BOOL' type='B' index='1'/>
+<arg name='seconds' declared_type='double' type='d' index='2'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithType:passedTime:'>
+<arg name='type' declared_type='NSString*' type='@' index='0'/>
+<arg name='seconds' declared_type='double' type='d' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='passedTime'>
+<retval declared_type='double' type='d'/>
+</method>
+</class>
+<class name='SPEvent'>
+<method selector='bubbles'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='currentTarget'>
+<retval declared_type='SPEventDispatcher*' type='@'/>
+</method>
+<method selector='eventWithType:' class_method='true'>
+<arg name='type' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='SPEvent*' type='@'/>
+</method>
+<method selector='eventWithType:bubbles:' class_method='true'>
+<arg name='type' declared_type='NSString*' type='@' index='0'/>
+<arg name='bubbles' declared_type='BOOL' type='B' index='1'/>
+<retval declared_type='SPEvent*' type='@'/>
+</method>
+<method selector='initWithType:'>
+<arg name='type' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithType:bubbles:'>
+<arg name='type' declared_type='NSString*' type='@' index='0'/>
+<arg name='bubbles' declared_type='BOOL' type='B' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setCurrentTarget:'>
+<arg name='currentTarget' declared_type='SPEventDispatcher*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTarget:'>
+<arg name='target' declared_type='SPEventDispatcher*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stopImmediatePropagation'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stopPropagation'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stopsImmediatePropagation'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='stopsPropagation'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='target'>
+<retval declared_type='SPEventDispatcher*' type='@'/>
+</method>
+<method selector='type'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='SPEventDispatcher'>
+<method selector='addEventListener:atObject:forType:'>
+<arg name='listener' declared_type='SEL' type=':' index='0'/>
+<arg name='object' declared_type='id' type='@' index='1'/>
+<arg name='eventType' declared_type='NSString*' type='@' index='2'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addEventListener:atObject:forType:retainObject:'>
+<arg name='listener' declared_type='SEL' type=':' index='0'/>
+<arg name='object' declared_type='id' type='@' index='1'/>
+<arg name='eventType' declared_type='NSString*' type='@' index='2'/>
+<arg name='retain' declared_type='BOOL' type='B' index='3'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='dispatchEvent:'>
+<arg name='event' declared_type='SPEvent*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='hasEventListenerForType:'>
+<arg name='eventType' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='removeEventListener:atObject:forType:'>
+<arg name='listener' declared_type='SEL' type=':' index='0'/>
+<arg name='object' declared_type='id' type='@' index='1'/>
+<arg name='eventType' declared_type='NSString*' type='@' index='2'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeEventListenersAtObject:forType:'>
+<arg name='object' declared_type='id' type='@' index='0'/>
+<arg name='eventType' declared_type='NSString*' type='@' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='SPGLTexture'>
+<method selector='filter'>
+<retval declared_type='SPTextureFilter' type='i'/>
+</method>
+<method selector='initWithData:properties:'>
+<arg name='imgData' declared_type='void*' const='true' type='^v' index='0'/>
+<arg name='properties' declared_type='SPTextureProperties' type='{_SPTextureProperties=iiiiBB}' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='scale'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='setFilter:'>
+<arg name='filter' declared_type='SPTextureFilter' type='i' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setScale:'>
+<arg name='scale' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='textureWithData:properties:' class_method='true'>
+<arg name='imgData' declared_type='void*' const='true' type='^v' index='0'/>
+<arg name='properties' declared_type='SPTextureProperties' type='{_SPTextureProperties=iiiiBB}' index='1'/>
+<retval declared_type='SPGLTexture*' type='@'/>
+</method>
+</class>
+<class name='SPImage'>
+<method selector='imageWithContentsOfFile:' class_method='true'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='SPImage*' type='@'/>
+</method>
+<method selector='imageWithTexture:' class_method='true'>
+<arg name='texture' declared_type='SPTexture*' type='@' index='0'/>
+<retval declared_type='SPImage*' type='@'/>
+</method>
+<method selector='initWithContentsOfFile:'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithTexture:'>
+<arg name='texture' declared_type='SPTexture*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setTexCoords:ofVertex:'>
+<arg name='coords' declared_type='SPPoint*' type='@' index='0'/>
+<arg name='vertexID' declared_type='int' type='i' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTexture:'>
+<arg name='texture' declared_type='SPTexture*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='texCoordsOfVertex:'>
+<arg name='vertexID' declared_type='int' type='i' index='0'/>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='texture'>
+<retval declared_type='SPTexture*' type='@'/>
+</method>
+</class>
+<class name='SPJuggler'>
+<method selector='addObject:'>
+<arg name='object' declared_type='id' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='delayInvocationAtTarget:byTime:'>
+<arg name='target' declared_type='id' type='@' index='0'/>
+<arg name='time' declared_type='double' type='d' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='elapsedTime'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='juggler' class_method='true'>
+<retval declared_type='SPJuggler*' type='@'/>
+</method>
+<method selector='removeAllObjects'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeObject:'>
+<arg name='object' declared_type='id' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeObjectsWithTarget:'>
+<arg name='object' declared_type='id' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeTweensWithTarget:'>
+<arg name='object' declared_type='id' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='SPMatrix'>
+<method selector='a'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='b'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='c'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='concatMatrix:'>
+<arg name='matrix' declared_type='SPMatrix*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='d'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='determinant'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='identity'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithA:b:c:d:tx:ty:'>
+<arg name='a' declared_type='float' type='f' index='0'/>
+<arg name='b' declared_type='float' type='f' index='1'/>
+<arg name='c' declared_type='float' type='f' index='2'/>
+<arg name='d' declared_type='float' type='f' index='3'/>
+<arg name='tx' declared_type='float' type='f' index='4'/>
+<arg name='ty' declared_type='float' type='f' index='5'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='invert'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='isEqual:'>
+<arg name='other' declared_type='id' type='@' index='0'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='matrixWithA:b:c:d:tx:ty:' class_method='true'>
+<arg name='a' declared_type='float' type='f' index='0'/>
+<arg name='b' declared_type='float' type='f' index='1'/>
+<arg name='c' declared_type='float' type='f' index='2'/>
+<arg name='d' declared_type='float' type='f' index='3'/>
+<arg name='tx' declared_type='float' type='f' index='4'/>
+<arg name='ty' declared_type='float' type='f' index='5'/>
+<retval declared_type='SPMatrix*' type='@'/>
+</method>
+<method selector='matrixWithIdentity' class_method='true'>
+<retval declared_type='SPMatrix*' type='@'/>
+</method>
+<method selector='rotateBy:'>
+<arg name='angle' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='scaleBy:'>
+<arg name='scale' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='scaleXBy:yBy:'>
+<arg name='sx' declared_type='float' type='f' index='0'/>
+<arg name='sy' declared_type='float' type='f' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setA:'>
+<arg name='a' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setA:b:c:d:tx:ty:'>
+<arg name='a' declared_type='float' type='f' index='0'/>
+<arg name='b' declared_type='float' type='f' index='1'/>
+<arg name='c' declared_type='float' type='f' index='2'/>
+<arg name='d' declared_type='float' type='f' index='3'/>
+<arg name='tx' declared_type='float' type='f' index='4'/>
+<arg name='ty' declared_type='float' type='f' index='5'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setB:'>
+<arg name='b' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setC:'>
+<arg name='c' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setD:'>
+<arg name='d' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTx:'>
+<arg name='tx' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTy:'>
+<arg name='ty' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='transformPoint:'>
+<arg name='point' declared_type='SPPoint*' type='@' index='0'/>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='translateXBy:yBy:'>
+<arg name='dx' declared_type='float' type='f' index='0'/>
+<arg name='dy' declared_type='float' type='f' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='tx'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='ty'>
+<retval declared_type='float' type='f'/>
+</method>
+</class>
+<class name='SPMovieClip'>
+<method selector='addFrame:'>
+<arg name='texture' declared_type='SPTexture*' type='@' index='0'/>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='addFrame:withDuration:'>
+<arg name='texture' declared_type='SPTexture*' type='@' index='0'/>
+<arg name='duration' declared_type='double' type='d' index='1'/>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='currentFrame'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='duration'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='durationAtIndex:'>
+<arg name='frameID' declared_type='int' type='i' index='0'/>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='fps'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='frameAtIndex:'>
+<arg name='frameID' declared_type='int' type='i' index='0'/>
+<retval declared_type='SPTexture*' type='@'/>
+</method>
+<method selector='initWithFrame:fps:'>
+<arg name='texture' declared_type='SPTexture*' type='@' index='0'/>
+<arg name='fps' declared_type='float' type='f' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithFrames:fps:'>
+<arg name='textures' declared_type='NSArray*' type='@' index='0'/>
+<arg name='fps' declared_type='float' type='f' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='insertFrame:atIndex:'>
+<arg name='texture' declared_type='SPTexture*' type='@' index='0'/>
+<arg name='frameID' declared_type='int' type='i' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='isPlaying'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='loop'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='movieWithFrame:fps:' class_method='true'>
+<arg name='texture' declared_type='SPTexture*' type='@' index='0'/>
+<arg name='fps' declared_type='float' type='f' index='1'/>
+<retval declared_type='SPMovieClip*' type='@'/>
+</method>
+<method selector='movieWithFrames:fps:' class_method='true'>
+<arg name='textures' declared_type='NSArray*' type='@' index='0'/>
+<arg name='fps' declared_type='float' type='f' index='1'/>
+<retval declared_type='SPMovieClip*' type='@'/>
+</method>
+<method selector='numFrames'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='pause'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='play'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeFrameAtIndex:'>
+<arg name='frameID' declared_type='int' type='i' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCurrentFrame:'>
+<arg name='currentFrame' declared_type='int' type='i' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDuration:atIndex:'>
+<arg name='duration' declared_type='double' type='d' index='0'/>
+<arg name='frameID' declared_type='int' type='i' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFps:'>
+<arg name='fps' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFrame:atIndex:'>
+<arg name='texture' declared_type='SPTexture*' type='@' index='0'/>
+<arg name='frameID' declared_type='int' type='i' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLoop:'>
+<arg name='loop' declared_type='BOOL' type='B' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSound:atIndex:'>
+<arg name='sound' declared_type='SPSoundChannel*' type='@' index='0'/>
+<arg name='frameID' declared_type='int' type='i' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='soundAtIndex:'>
+<arg name='frameID' declared_type='int' type='i' index='0'/>
+<retval declared_type='SPSoundChannel*' type='@'/>
+</method>
+<method selector='stop'>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='SPPoint'>
+<method selector='addPoint:'>
+<arg name='point' declared_type='SPPoint*' type='@' index='0'/>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='angle'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='angleBetweenPoint:andPoint:' class_method='true'>
+<arg name='p1' declared_type='SPPoint*' type='@' index='0'/>
+<arg name='p2' declared_type='SPPoint*' type='@' index='1'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='distanceFromPoint:toPoint:' class_method='true'>
+<arg name='p1' declared_type='SPPoint*' type='@' index='0'/>
+<arg name='p2' declared_type='SPPoint*' type='@' index='1'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='dot:'>
+<arg name='other' declared_type='SPPoint*' type='@' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='initWithPolarLength:angle:'>
+<arg name='length' declared_type='float' type='f' index='0'/>
+<arg name='angle' declared_type='float' type='f' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithX:y:'>
+<arg name='x' declared_type='float' type='f' index='0'/>
+<arg name='y' declared_type='float' type='f' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='interpolateFromPoint:toPoint:ratio:' class_method='true'>
+<arg name='p1' declared_type='SPPoint*' type='@' index='0'/>
+<arg name='p2' declared_type='SPPoint*' type='@' index='1'/>
+<arg name='ratio' declared_type='float' type='f' index='2'/>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='invert'>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='isEqual:'>
+<arg name='other' declared_type='id' type='@' index='0'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isOrigin'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='length'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='lengthSquared'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='normalize'>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='point' class_method='true'>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='pointWithPolarLength:angle:' class_method='true'>
+<arg name='length' declared_type='float' type='f' index='0'/>
+<arg name='angle' declared_type='float' type='f' index='1'/>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='pointWithX:y:' class_method='true'>
+<arg name='x' declared_type='float' type='f' index='0'/>
+<arg name='y' declared_type='float' type='f' index='1'/>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='rotateBy:'>
+<arg name='angle' declared_type='float' type='f' index='0'/>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='scaleBy:'>
+<arg name='scalar' declared_type='float' type='f' index='0'/>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='setX:'>
+<arg name='x' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setY:'>
+<arg name='y' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='subtractPoint:'>
+<arg name='point' declared_type='SPPoint*' type='@' index='0'/>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='x'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='y'>
+<retval declared_type='float' type='f'/>
+</method>
+</class>
+<class name='SPPoolObject'>
+<method selector='poolInfo' class_method='true'>
+<retval declared_type='SPPoolInfo*' type='@'/>
+</method>
+<method selector='purgePool' class_method='true'>
+<retval declared_type='int' type='i'/>
+</method>
+</class>
+<class name='SPQuad'>
+<method selector='color'>
+<retval declared_type='uint' type='I'/>
+</method>
+<method selector='colorOfVertex:'>
+<arg name='vertexID' declared_type='int' type='i' index='0'/>
+<retval declared_type='uint' type='I'/>
+</method>
+<method selector='initWithWidth:height:'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithWidth:height:color:'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<arg name='color' declared_type='uint' type='I' index='2'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='quad' class_method='true'>
+<retval declared_type='SPQuad*' type='@'/>
+</method>
+<method selector='quadWithWidth:height:' class_method='true'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<retval declared_type='SPQuad*' type='@'/>
+</method>
+<method selector='quadWithWidth:height:color:' class_method='true'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<arg name='color' declared_type='uint' type='I' index='2'/>
+<retval declared_type='SPQuad*' type='@'/>
+</method>
+<method selector='setColor:'>
+<arg name='color' declared_type='uint' type='I' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setColor:ofVertex:'>
+<arg name='color' declared_type='uint' type='I' index='0'/>
+<arg name='vertexID' declared_type='int' type='i' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='SPRectangle'>
+<method selector='bottom'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='bottomRight'>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='containsPoint:'>
+<arg name='point' declared_type='SPPoint*' type='@' index='0'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='containsRectangle:'>
+<arg name='rectangle' declared_type='SPRectangle*' type='@' index='0'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='containsX:y:'>
+<arg name='x' declared_type='float' type='f' index='0'/>
+<arg name='y' declared_type='float' type='f' index='1'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='height'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='initWithX:y:width:height:'>
+<arg name='x' declared_type='float' type='f' index='0'/>
+<arg name='y' declared_type='float' type='f' index='1'/>
+<arg name='width' declared_type='float' type='f' index='2'/>
+<arg name='height' declared_type='float' type='f' index='3'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='intersectionWithRectangle:'>
+<arg name='rectangle' declared_type='SPRectangle*' type='@' index='0'/>
+<retval declared_type='SPRectangle*' type='@'/>
+</method>
+<method selector='intersectsRectangle:'>
+<arg name='rectangle' declared_type='SPRectangle*' type='@' index='0'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isEmpty'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='left'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='rectangleWithX:y:width:height:' class_method='true'>
+<arg name='x' declared_type='float' type='f' index='0'/>
+<arg name='y' declared_type='float' type='f' index='1'/>
+<arg name='width' declared_type='float' type='f' index='2'/>
+<arg name='height' declared_type='float' type='f' index='3'/>
+<retval declared_type='SPRectangle*' type='@'/>
+</method>
+<method selector='right'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='setBottom:'>
+<arg name='bottom' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBottomRight:'>
+<arg name='bottomRight' declared_type='SPPoint*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setEmpty'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setHeight:'>
+<arg name='height' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLeft:'>
+<arg name='left' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRight:'>
+<arg name='right' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSize:'>
+<arg name='size' declared_type='SPPoint*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTop:'>
+<arg name='top' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTopLeft:'>
+<arg name='topLeft' declared_type='SPPoint*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWidth:'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setX:'>
+<arg name='x' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setY:'>
+<arg name='y' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='size'>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='top'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='topLeft'>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='uniteWithRectangle:'>
+<arg name='rectangle' declared_type='SPRectangle*' type='@' index='0'/>
+<retval declared_type='SPRectangle*' type='@'/>
+</method>
+<method selector='width'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='x'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='y'>
+<retval declared_type='float' type='f'/>
+</method>
+</class>
+<class name='SPRenderSupport'>
+<method selector='bindTexture:'>
+<arg name='texture' declared_type='SPTexture*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='checkForOpenGLError' class_method='true'>
+<retval declared_type='uint' type='I'/>
+</method>
+<method selector='clearWithColor:alpha:' class_method='true'>
+<arg name='color' declared_type='uint' type='I' index='0'/>
+<arg name='alpha' declared_type='float' type='f' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='convertColor:alpha:'>
+<arg name='color' declared_type='uint' type='I' index='0'/>
+<arg name='alpha' declared_type='float' type='f' index='1'/>
+<retval declared_type='uint' type='I'/>
+</method>
+<method selector='convertColor:alpha:premultiplyAlpha:' class_method='true'>
+<arg name='color' declared_type='uint' type='I' index='0'/>
+<arg name='alpha' declared_type='float' type='f' index='1'/>
+<arg name='pma' declared_type='BOOL' type='B' index='2'/>
+<retval declared_type='uint' type='I'/>
+</method>
+<method selector='reset'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setupOrthographicRenderingWithLeft:right:bottom:top:' class_method='true'>
+<arg name='left' declared_type='float' type='f' index='0'/>
+<arg name='right' declared_type='float' type='f' index='1'/>
+<arg name='bottom' declared_type='float' type='f' index='2'/>
+<arg name='top' declared_type='float' type='f' index='3'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='transformMatrixForObject:' class_method='true'>
+<arg name='object' declared_type='SPDisplayObject*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='usingPremultipliedAlpha'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</class>
+<class name='SPRenderTexture'>
+<method selector='bundleDrawCalls:'>
+<arg name='block' function_pointer='true' declared_type='SPDrawingBlock' type='@?' index='0'>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='clearWithColor:alpha:'>
+<arg name='color' declared_type='uint' type='I' index='0'/>
+<arg name='alpha' declared_type='float' type='f' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='drawObject:'>
+<arg name='object' declared_type='SPDisplayObject*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='initWithWidth:height:'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithWidth:height:fillColor:'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<arg name='argb' declared_type='uint' type='I' index='2'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithWidth:height:fillColor:scale:'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<arg name='argb' declared_type='uint' type='I' index='2'/>
+<arg name='scale' declared_type='float' type='f' index='3'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='textureWithWidth:height:' class_method='true'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<retval declared_type='SPRenderTexture*' type='@'/>
+</method>
+<method selector='textureWithWidth:height:fillColor:' class_method='true'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<arg name='argb' declared_type='uint' type='I' index='2'/>
+<retval declared_type='SPRenderTexture*' type='@'/>
+</method>
+</class>
+<class name='SPSound'>
+<method selector='createChannel'>
+<retval declared_type='SPSoundChannel*' type='@'/>
+</method>
+<method selector='duration'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='initWithContentsOfFile:'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='play'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='soundWithContentsOfFile:' class_method='true'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='SPSound*' type='@'/>
+</method>
+</class>
+<class name='SPSoundChannel'>
+<method selector='duration'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='isPaused'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isPlaying'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isStopped'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='loop'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='pause'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='play'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLoop:'>
+<arg name='loop' declared_type='BOOL' type='B' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setVolume:'>
+<arg name='volume' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stop'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='volume'>
+<retval declared_type='float' type='f'/>
+</method>
+</class>
+<class name='SPSprite'>
+<method selector='sprite' class_method='true'>
+<retval declared_type='SPSprite*' type='@'/>
+</method>
+</class>
+<class name='SPStage'>
+<method selector='advanceTime:'>
+<arg name='seconds' declared_type='double' type='d' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='color'>
+<retval declared_type='uint' type='I'/>
+</method>
+<method selector='contentScaleFactor' class_method='true'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='doubleResolutionsOnPad' class_method='true'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='frameRate'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='initWithWidth:height:'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='juggler'>
+<retval declared_type='SPJuggler*' type='@'/>
+</method>
+<method selector='mainStage' class_method='true'>
+<retval declared_type='SPStage*' type='@'/>
+</method>
+<method selector='nativeView'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='processTouches:'>
+<arg name='touches' declared_type='NSSet*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setColor:'>
+<arg name='color' declared_type='uint' type='I' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setContentScaleFactor:' class_method='true'>
+<arg name='value' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFrameRate:'>
+<arg name='frameRate' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setNativeView:'>
+<arg name='nativeView' declared_type='id' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSupportHighResolutions:' class_method='true'>
+<arg name='hd' declared_type='BOOL' type='B' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSupportHighResolutions:doubleOnPad:' class_method='true'>
+<arg name='hd' declared_type='BOOL' type='B' index='0'/>
+<arg name='pad' declared_type='BOOL' type='B' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='supportHighResolutions' class_method='true'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</class>
+<class name='SPSubTexture'>
+<method selector='baseTexture'>
+<retval declared_type='SPTexture*' type='@'/>
+</method>
+<method selector='clipping'>
+<retval declared_type='SPRectangle*' type='@'/>
+</method>
+<method selector='initWithRegion:ofTexture:'>
+<arg name='region' declared_type='SPRectangle*' type='@' index='0'/>
+<arg name='texture' declared_type='SPTexture*' type='@' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setClipping:'>
+<arg name='clipping' declared_type='SPRectangle*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='textureWithRegion:ofTexture:' class_method='true'>
+<arg name='region' declared_type='SPRectangle*' type='@' index='0'/>
+<arg name='texture' declared_type='SPTexture*' type='@' index='1'/>
+<retval declared_type='SPSubTexture*' type='@'/>
+</method>
+</class>
+<class name='SPTextField'>
+<method selector='border'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='color'>
+<retval declared_type='uint' type='I'/>
+</method>
+<method selector='fontName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='fontSize'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='hAlign'>
+<retval declared_type='SPHAlign' type='i'/>
+</method>
+<method selector='initWithText:'>
+<arg name='text' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithWidth:height:text:'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<arg name='text' declared_type='NSString*' type='@' index='2'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithWidth:height:text:fontName:fontSize:color:'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<arg name='text' declared_type='NSString*' type='@' index='2'/>
+<arg name='name' declared_type='NSString*' type='@' index='3'/>
+<arg name='size' declared_type='float' type='f' index='4'/>
+<arg name='color' declared_type='uint' type='I' index='5'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='kerning'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='registerBitmapFontFromFile:' class_method='true'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='registerBitmapFontFromFile:texture:' class_method='true'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<arg name='texture' declared_type='SPTexture*' type='@' index='1'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setBorder:'>
+<arg name='border' declared_type='BOOL' type='B' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setColor:'>
+<arg name='color' declared_type='uint' type='I' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFontName:'>
+<arg name='fontName' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFontSize:'>
+<arg name='fontSize' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setHAlign:'>
+<arg name='hAlign' declared_type='SPHAlign' type='i' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setKerning:'>
+<arg name='kerning' declared_type='BOOL' type='B' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setText:'>
+<arg name='text' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setVAlign:'>
+<arg name='vAlign' declared_type='SPVAlign' type='i' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='text'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='textBounds'>
+<retval declared_type='SPRectangle*' type='@'/>
+</method>
+<method selector='textFieldWithText:' class_method='true'>
+<arg name='text' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='SPTextField*' type='@'/>
+</method>
+<method selector='textFieldWithWidth:height:text:' class_method='true'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<arg name='text' declared_type='NSString*' type='@' index='2'/>
+<retval declared_type='SPTextField*' type='@'/>
+</method>
+<method selector='textFieldWithWidth:height:text:fontName:fontSize:color:' class_method='true'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<arg name='text' declared_type='NSString*' type='@' index='2'/>
+<arg name='name' declared_type='NSString*' type='@' index='3'/>
+<arg name='size' declared_type='float' type='f' index='4'/>
+<arg name='color' declared_type='uint' type='I' index='5'/>
+<retval declared_type='SPTextField*' type='@'/>
+</method>
+<method selector='unregisterBitmapFont:' class_method='true'>
+<arg name='name' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='vAlign'>
+<retval declared_type='SPVAlign' type='i'/>
+</method>
+</class>
+<class name='SPTexture'>
+<method selector='adjustTextureCoordinates:saveAtTarget:numVertices:'>
+<arg name='texCoords' declared_type='float*' const='true' type='^f' index='0'/>
+<arg name='targetTexCoords' declared_type='float*' type='^f' index='1'/>
+<arg name='numVertices' declared_type='int' type='i' index='2'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='emptyTexture' class_method='true'>
+<retval declared_type='SPTexture*' type='@'/>
+</method>
+<method selector='filter'>
+<retval declared_type='SPTextureFilter' type='i'/>
+</method>
+<method selector='frame'>
+<retval declared_type='SPRectangle*' type='@'/>
+</method>
+<method selector='hasPremultipliedAlpha'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='height'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='initWithContentsOfFile:'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithContentsOfImage:'>
+<arg name='image' declared_type='id' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithRegion:ofTexture:'>
+<arg name='region' declared_type='SPRectangle*' type='@' index='0'/>
+<arg name='texture' declared_type='SPTexture*' type='@' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithWidth:height:draw:'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<arg name='drawingBlock' function_pointer='true' declared_type='SPTextureDrawingBlock' type='@?' index='2'>
+<arg declared_type='CGContextRef' type='^{CGContext=}'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithWidth:height:scale:colorSpace:draw:'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<arg name='scale' declared_type='float' type='f' index='2'/>
+<arg name='colorSpace' declared_type='SPColorSpace' type='i' index='3'/>
+<arg name='drawingBlock' function_pointer='true' declared_type='SPTextureDrawingBlock' type='@?' index='4'>
+<arg declared_type='CGContextRef' type='^{CGContext=}'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='repeat'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='scale'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='setFilter:'>
+<arg name='filter' declared_type='SPTextureFilter' type='i' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFrame:'>
+<arg name='frame' declared_type='SPRectangle*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRepeat:'>
+<arg name='repeat' declared_type='BOOL' type='B' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='textureID'>
+<retval declared_type='uint' type='I'/>
+</method>
+<method selector='textureWithContentsOfFile:' class_method='true'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='SPTexture*' type='@'/>
+</method>
+<method selector='textureWithRegion:ofTexture:' class_method='true'>
+<arg name='region' declared_type='SPRectangle*' type='@' index='0'/>
+<arg name='texture' declared_type='SPTexture*' type='@' index='1'/>
+<retval declared_type='SPTexture*' type='@'/>
+</method>
+<method selector='textureWithWidth:height:draw:' class_method='true'>
+<arg name='width' declared_type='float' type='f' index='0'/>
+<arg name='height' declared_type='float' type='f' index='1'/>
+<arg name='drawingBlock' function_pointer='true' declared_type='SPTextureDrawingBlock' type='@?' index='2'>
+<arg declared_type='CGContextRef' type='^{CGContext=}'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='SPTexture*' type='@'/>
+</method>
+<method selector='width'>
+<retval declared_type='float' type='f'/>
+</method>
+</class>
+<class name='SPTextureAtlas'>
+<method selector='addRegion:withName:'>
+<arg name='region' declared_type='SPRectangle*' type='@' index='0'/>
+<arg name='name' declared_type='NSString*' type='@' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addRegion:withName:frame:'>
+<arg name='region' declared_type='SPRectangle*' type='@' index='0'/>
+<arg name='name' declared_type='NSString*' type='@' index='1'/>
+<arg name='frame' declared_type='SPRectangle*' type='@' index='2'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='atlasWithContentsOfFile:' class_method='true'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='SPTextureAtlas*' type='@'/>
+</method>
+<method selector='count'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='initWithContentsOfFile:'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithContentsOfFile:texture:'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<arg name='texture' declared_type='SPTexture*' type='@' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithTexture:'>
+<arg name='texture' declared_type='SPTexture*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='removeRegion:'>
+<arg name='name' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='textureByName:'>
+<arg name='name' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='SPTexture*' type='@'/>
+</method>
+<method selector='texturesStartingWith:'>
+<arg name='name' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+</class>
+<class name='SPTouch'>
+<method selector='globalX'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='globalY'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='locationInSpace:'>
+<arg name='space' declared_type='SPDisplayObject*' type='@' index='0'/>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='phase'>
+<retval declared_type='SPTouchPhase' type='i'/>
+</method>
+<method selector='previousGlobalX'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='previousGlobalY'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='previousLocationInSpace:'>
+<arg name='space' declared_type='SPDisplayObject*' type='@' index='0'/>
+<retval declared_type='SPPoint*' type='@'/>
+</method>
+<method selector='setGlobalX:'>
+<arg name='x' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setGlobalY:'>
+<arg name='y' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPhase:'>
+<arg name='phase' declared_type='SPTouchPhase' type='i' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPreviousGlobalX:'>
+<arg name='x' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPreviousGlobalY:'>
+<arg name='y' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTapCount:'>
+<arg name='tapCount' declared_type='int' type='i' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTarget:'>
+<arg name='target' declared_type='SPDisplayObject*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTimestamp:'>
+<arg name='timestamp' declared_type='double' type='d' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='tapCount'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='target'>
+<retval declared_type='SPDisplayObject*' type='@'/>
+</method>
+<method selector='timestamp'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='touch' class_method='true'>
+<retval declared_type='SPTouch*' type='@'/>
+</method>
+</class>
+<class name='SPTouchEvent'>
+<method selector='eventWithType:touches:' class_method='true'>
+<arg name='type' declared_type='NSString*' type='@' index='0'/>
+<arg name='touches' declared_type='NSSet*' type='@' index='1'/>
+<retval declared_type='SPTouchEvent*' type='@'/>
+</method>
+<method selector='initWithType:bubbles:touches:'>
+<arg name='type' declared_type='NSString*' type='@' index='0'/>
+<arg name='bubbles' declared_type='BOOL' type='B' index='1'/>
+<arg name='touches' declared_type='NSSet*' type='@' index='2'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithType:touches:'>
+<arg name='type' declared_type='NSString*' type='@' index='0'/>
+<arg name='touches' declared_type='NSSet*' type='@' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='timestamp'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='touches'>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='touchesWithTarget:'>
+<arg name='target' declared_type='SPDisplayObject*' type='@' index='0'/>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='touchesWithTarget:andPhase:'>
+<arg name='target' declared_type='SPDisplayObject*' type='@' index='0'/>
+<arg name='phase' declared_type='SPTouchPhase' type='i' index='1'/>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+</class>
+<class name='SPTouchProcessor'>
+<method selector='initWithRoot:'>
+<arg name='root' declared_type='SPDisplayObjectContainer*' type='@' index='0'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='processTouches:'>
+<arg name='touches' declared_type='NSSet*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='root'>
+<retval declared_type='SPDisplayObjectContainer*' type='@'/>
+</method>
+<method selector='setRoot:'>
+<arg name='root' declared_type='SPDisplayObjectContainer*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='SPTransitions'>
+<method selector='easeIn:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='easeInBack:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='easeInBounce:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='easeInElastic:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='easeInOut:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='easeInOutBack:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='easeInOutBounce:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='easeInOutElastic:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='easeOut:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='easeOutBack:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='easeOutBounce:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='easeOutElastic:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='easeOutIn:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='easeOutInBack:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='easeOutInBounce:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='easeOutInElastic:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='linear:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='randomize:' class_method='true'>
+<arg name='ratio' declared_type='float' type='f' index='0'/>
+<retval declared_type='float' type='f'/>
+</method>
+</class>
+<class name='SPTween'>
+<method selector='animateProperty:targetValue:'>
+<arg name='property' declared_type='NSString*' type='@' index='0'/>
+<arg name='value' declared_type='float' type='f' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='currentTime'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='delay'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='fadeTo:'>
+<arg name='alpha' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='initWithTarget:time:'>
+<arg name='target' declared_type='id' type='@' index='0'/>
+<arg name='time' declared_type='double' type='d' index='1'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithTarget:time:transition:'>
+<arg name='target' declared_type='id' type='@' index='0'/>
+<arg name='time' declared_type='double' type='d' index='1'/>
+<arg name='transition' declared_type='NSString*' type='@' index='2'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='loop'>
+<retval declared_type='SPLoopType' type='i'/>
+</method>
+<method selector='moveToX:y:'>
+<arg name='x' declared_type='float' type='f' index='0'/>
+<arg name='y' declared_type='float' type='f' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='scaleTo:'>
+<arg name='scale' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDelay:'>
+<arg name='delay' declared_type='double' type='d' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLoop:'>
+<arg name='loop' declared_type='SPLoopType' type='i' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='target'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='time'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='transition'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='tweenWithTarget:time:' class_method='true'>
+<arg name='target' declared_type='id' type='@' index='0'/>
+<arg name='time' declared_type='double' type='d' index='1'/>
+<retval declared_type='SPTween*' type='@'/>
+</method>
+<method selector='tweenWithTarget:time:transition:' class_method='true'>
+<arg name='target' declared_type='id' type='@' index='0'/>
+<arg name='time' declared_type='double' type='d' index='1'/>
+<arg name='transition' declared_type='NSString*' type='@' index='2'/>
+<retval declared_type='SPTween*' type='@'/>
+</method>
+</class>
+<class name='SPTweenedProperty'>
+<method selector='currentValue'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='delta'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='endValue'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='initWithTarget:name:endValue:'>
+<arg name='target' declared_type='id' type='@' index='0'/>
+<arg name='name' declared_type='NSString*' type='@' index='1'/>
+<arg name='endValue' declared_type='float' type='f' index='2'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setCurrentValue:'>
+<arg name='currentValue' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setEndValue:'>
+<arg name='endValue' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setStartValue:'>
+<arg name='startValue' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='startValue'>
+<retval declared_type='float' type='f'/>
+</method>
+</class>
+<class name='SPUtils'>
+<method selector='absolutePathToFile:' class_method='true'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='absolutePathToFile:withScaleFactor:' class_method='true'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<arg name='factor' declared_type='float' type='f' index='1'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='absolutePathToFile:withScaleFactor:idiom:' class_method='true'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<arg name='factor' declared_type='float' type='f' index='1'/>
+<arg name='idiom' declared_type='id' type='@' index='2'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='fileExistsAtPath:' class_method='true'>
+<arg name='path' declared_type='NSString*' type='@' index='0'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='nextPowerOfTwo:' class_method='true'>
+<arg name='number' declared_type='int' type='i' index='0'/>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='randomFloat' class_method='true'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='randomIntBetweenMin:andMax:' class_method='true'>
+<arg name='minValue' declared_type='int' type='i' index='0'/>
+<arg name='maxValue' declared_type='int' type='i' index='1'/>
+<retval declared_type='int' type='i'/>
+</method>
+</class>
+<class name='SPView'>
+<method selector='frameRate'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='isStarted'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='setFrameRate:'>
+<arg name='frameRate' declared_type='float' type='f' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setStage:'>
+<arg name='stage' declared_type='SPStage*' type='@' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stage'>
+<retval declared_type='SPStage*' type='@'/>
+</method>
+<method selector='start'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stop'>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<informal_protocol name='SPAnimatable'>
+<method type='v16@0:4d8' selector='advanceTime:'>
+<arg name='seconds' declared_type='double' type='d' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method type='B8@0:4' selector='isComplete'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+</signatures>
