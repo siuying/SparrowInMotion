@@ -19,8 +19,7 @@ class GameController < SPStage
     gc.game.x = width  / 2
     gc.game.y = height / 2
     gc.rotateToInterfaceOrientation(orientation, animationTime:0)
-    
-    $stderr.puts "GameController.addChild"
+
     gc.addChild(gc.game)
     gc
   end

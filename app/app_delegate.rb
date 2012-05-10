@@ -8,18 +8,15 @@ class AppDelegate
     SPStage.setSupportHighResolutions(true, doubleOnPad: true)
     width  = ipad? ? 384 : 320
     height = ipad? ? 512 : 480
-    
-    $stderr.puts "setup sparrowView"
+
     @sparrowView = SPView.alloc.initWithFrame(screenBounds)
     @sparrowView.multipleTouchEnabled = false
     @sparrowView.frameRate = 30
     @window.addSubview(@sparrowView)
 
-    $stderr.puts "setup gameController"
     @gameController = GameController.new(width, height)
     @sparrowView.stage = @gameController
 
-    $stderr.puts "setup viewController"
     @viewController = ViewController.new(@sparrowView)
     if @window.respondsToSelector(:"setRootViewController:")
       @window.setRootViewController(@viewController)

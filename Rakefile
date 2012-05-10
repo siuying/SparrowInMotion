@@ -9,5 +9,5 @@ Motion::Project::App.setup do |app|
     dependency 'Sparrow-Framework'
   end
   
-  app.files_dependencies "app/models/game.rb" => "app/supports/object_ext.rb"
+  app.files_dependencies "app/game/game.rb" => "app/supports/number_ext.rb"
 end
