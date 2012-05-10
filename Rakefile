@@ -9,6 +9,6 @@ Motion::Project::App.setup do |app|
   app.pods do
     dependency 'Sparrow-Framework'
   end
-  
+  app.frameworks += ['OpenGLES', 'OpenAL', 'QuartzCore', 'AudioToolbox', 'AVFoundation']  
   app.files_dependencies "app/game/game.rb" => "app/supports/number_ext.rb"
 end
