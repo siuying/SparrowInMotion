@@ -1,6 +1,6 @@
 # README
 
-Demo to use Sparrow Framework - iOS opensource engine - on RubyMotion.
+Demo to use Sparrow Framework - The Open Source Game Engine for iOS - in RubyMotion.
 
 ## Demo
 
