@@ -1,4 +1,6 @@
 class GameController < SPStage
+  include Sparrow
+
   attr_accessor :game
 
   def self.new(width, height)

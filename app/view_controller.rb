@@ -23,7 +23,7 @@ class ViewController < UIViewController
   end
 
   def loadView
-    self.view = OverlayView.alloc.initWithFrame(App.frame)
+    self.view = Sparrow::OverlayView.alloc.initWithFrame(App.frame)
   end
   
   def shouldAutorotateToInterfaceOrientation(interfaceOrientation)

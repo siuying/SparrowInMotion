@@ -1,4 +1,6 @@
 class Game < SPSprite
+  include Sparrow
+
   attr_accessor :game_width, :game_height
 
   def initWithWidth(width, height:height)
@@ -29,7 +31,7 @@ class Game < SPSprite
     self.addChild(@egg)
 
     @egg.addEventListener(:"onEggTouched:", atObject:self, forType:"touch")
-    @tween = SPTween.tweenWithTarget(@egg, time:5.0, transition: Transitions::EASE_IN_OUT)
+    @tween = SPTween.tweenWithTarget(@egg, time:5.0, transition:Transitions::EASE_IN_OUT)
     @tween.animateProperty("rotation", targetValue:360.0.to_rad)
     @tween.loop = SPLoopTypeRepeat
     SPStage.mainStage.juggler.addObject(@tween)
